@@ -17,7 +17,7 @@ USE_FREERTOS	?= n
 #GCC_TOOCHAIN	?= /opt/gcc-riscv/xpack-riscv-none-embed-gcc-10.2.0-1.2/bin
 #GCC_TOOCHAIN	?= /opt/gcc-riscv/xpack-riscv-none-elf-gcc-12.2.0-3/bin
 #GCC_TOOCHAIN	?= /opt/gcc-riscv/riscv-wch-embedded-gcc-v1.60/bin
-GCC_TOOCHAIN	?= /home/user/mcu_wp/WCH_RISCV/Toolchain/RISC-V-Embedded-GCC/bin
+GCC_TOOCHAIN	?= /home/gary/workplace/toolchain/wch_risc_development/Toolchain/risc-v_embedded_gcc/bin
 
 # riscv-none-embed- or riscv-none-elf-
 GCC_PREFIX		?= riscv-none-embed-
