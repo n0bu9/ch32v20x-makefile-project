@@ -47,7 +47,7 @@ ARCH_FLAGS	:= -march=rv32imac -mabi=ilp32 \
 DEBUG_FLAGS ?= -g
 
 # c flags
-OPT			?= -O3
+OPT			?= -O1
 CSTD		?= -std=gnu99
 TGT_CFLAGS 	+= $(ARCH_FLAGS) $(DEBUG_FLAGS) $(OPT) $(CSTD) $(addprefix -D, $(LIB_FLAGS)) -Wall -ffunction-sections -fdata-sections
 
