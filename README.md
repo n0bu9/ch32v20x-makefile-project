@@ -1,5 +1,5 @@
-# Linux环境下的CH32V203 makefile最小工程
-### 基于 https://github.com/IOsetting/ch32v208-template/ 修改
+# Linux环境下的CH32V20X makefile最小工程
+### 基于 https://github.com/IOsetting/ch32v208-template/ 修改，理论上CH32V20x通用，修改makefile中的LIB_FLAGS即可。仅测试CH32V20x。
 
 ## 工程目录结构
 ```
