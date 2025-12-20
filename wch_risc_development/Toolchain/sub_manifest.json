@@ -1,0 +1,114 @@
+{
+	"version": "1.0",
+	"id": "Toolchain",
+	"details": [
+		{
+			"version": "1.0",
+			"type":"RISC-V",
+			"name": "GCC8",
+			"path": "./RISC-V Embedded GCC",
+			"compiler_c_executable": {
+				"folder": "./bin",
+				"name": "riscv-none-embed-gcc"
+			},
+			"compiler_cpp_executable": {
+				"folder": "./bin",
+				"name": "riscv-none-embed-g++"
+			},
+			"linker_c_executable": {
+				"folder": "./bin",
+				"name": "riscv-none-embed-gcc"
+			},
+			"linker_cpp_executable": {
+				"folder": "./bin",
+				"name": "riscv-none-embed-g++"
+			},
+			"debugger_executable": {
+				"folder": "./bin",
+				"name": "riscv-none-embed-gdb"
+			},
+			"nm_executable": {
+				"folder": "./bin",
+				"name": "riscv-none-embed-nm"
+			},
+			"objdump_executable": {
+				"folder": "./bin",
+				"name": "riscv-none-embed-objdump"
+			},
+			"other_tool_dir": "bin",
+			"other_tool_prefix": "riscv-none-embed-"
+		},
+		{
+			"version": "1.0",
+			"type":"RISC-V",
+			"name": "GCC12",
+			"path": "./RISC-V Embedded GCC12",
+			"compiler_c_executable": {
+				"folder": "./bin",
+				"name": "riscv-wch-elf-gcc"
+			},
+			"compiler_cpp_executable": {
+				"folder": "./bin",
+				"name": "riscv-wch-elf-g++"
+			},
+			"linker_c_executable": {
+				"folder": "./bin",
+				"name": "riscv-wch-elf-gcc"
+			},
+			"linker_cpp_executable": {
+				"folder": "./bin",
+				"name": "riscv-wch-elf-g++"
+			},
+			"debugger_executable": {
+				"folder": "./bin",
+				"name": "riscv-wch-elf-gdb"
+			},
+			"nm_executable": {
+				"folder": "./bin",
+				"name": "riscv-wch-elf-nm"
+			},
+			"objdump_executable": {
+				"folder": "./bin",
+				"name": "riscv-wch-elf-objdump"
+			},
+			"other_tool_dir": "bin",
+			"other_tool_prefix": "riscv-wch-elf-"
+		},
+		{
+			"version": "1.0",
+			"type":"ARM",
+			"name": "ARM",
+			"path": "./arm-none-eabi-gcc",
+			"compiler_c_executable": {
+				"folder": "./bin",
+				"name": "arm-none-eabi-gcc"
+			},
+			"compiler_cpp_executable": {
+				"folder": "./bin",
+				"name": "arm-none-eabi-g++"
+			},
+			"linker_c_executable": {
+				"folder": "./bin",
+				"name": "arm-none-eabi-gcc"
+			},
+			"linker_cpp_executable": {
+				"folder": "./bin",
+				"name": "arm-none-eabi-g++"
+			},
+			"debugger_executable": {
+				"folder": "./bin",
+				"name": "arm-none-eabi-gdb"
+			},
+			"nm_executable": {
+				"folder": "./bin",
+				"name": "arm-none-eabi-nm"
+			},
+			"objdump_executable": {
+				"folder": "./bin",
+				"name": "arm-none-eabi-objdump"
+			},
+			"other_tool_dir": "bin",
+			"other_tool_prefix": "arm-none-eabi-"
+		}
+	]
+}

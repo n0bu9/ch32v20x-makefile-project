@@ -1,0 +1,19 @@
+{
+	"version": "1.0",
+	"id": "OpenOCD",
+	"details": [
+		{
+			"version": "1.0",
+			"name": "default",
+			"path": "./OpenOCD",
+			"openocd_executable": {
+				"folder": "./bin",
+				"name": "openocd"
+			},
+			"remote_executable": {
+				"folder": "./bin",
+				"name": "MRSRemoteAssistant"
+			}
+		}
+	]
+}

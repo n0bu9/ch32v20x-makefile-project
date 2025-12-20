@@ -1,0 +1,107 @@
+" ====================
+" 基本设定 / 用户习惯
+" ====================
+
+" 不与 vi 兼容，启用 Vim 全功能  
+set nocompatible
+
+" 开启语法高亮  
+syntax on
+" 根据文件类型自动应用插件 & 缩进规则  
+filetype plugin indent on
+
+" 显示行号 & 相对行号  
+set number
+" set relativenumber    " 如果你喜欢相对行号，可以取消注释
+
+" 高亮当前行（可选）  
+set cursorline
+
+" 命令输入时实时显示命令 & 匹配括号 — 对交互友好  
+set showcmd
+set showmatch
+
+" 启用鼠标（在 terminal 下可能有用）  
+set mouse=a
+
+" 搜索优化  
+set ignorecase           " 忽略大小写  
+set smartcase            " 如果搜索词有大写，则区分大小写  
+set incsearch            " 输入时即时搜索  
+set hlsearch             " 高亮所有匹配  
+
+" 缩进 / Tab / 空格 设置 —— 常用编码风格  
+set expandtab            " 用空格替代 tab  
+set tabstop=4            " 一个 tab 显示为 4 个空格  
+set shiftwidth=4         " >> << 缩进为 4 空格  
+set softtabstop=4        " 插入 tab 值为 4 空格  
+set autoindent           " 新行继承上一行缩进  
+set smartindent          " 智能缩进（对 C / C++ / 许多语言友好）  
+
+" 编码 / 文件格式（视环境需要启用）  
+set encoding=utf-8
+set fileencodings=utf-8,ucs-bom,euc-jp,gb18030,gbk,latin1   " 根据需要可添加或删减  
+
+" 显示 / 界面调整  
+set ruler                " 在状态栏显示行/列等信息  
+set laststatus=2         " 始终显示状态栏  
+" set nowrap             " 如果你喜欢长行不折断，可取消注释  
+" set wrap               " 默认自动换行（如适合编辑文档）  
+
+" ====================
+" 快捷键映射 (Mappings)
+" ====================
+
+" 保存快捷键：Ctrl-S  
+nnoremap <C-s> :w<CR>  
+inoremap <C-s> <Esc>:w<CR>a  
+
+" 插入模式中快速按 jj 退出到普通模式（避免伸手去按 Esc）  
+inoremap jj <Esc>
+" 行前/行后
+nnoremap H ^
+nnoremap L g_
+vnoremap H ^
+vnoremap L g_
+
+
+" 如果你喜欢，也可以把 leader 设为逗号 / 空格，方便定义更多快捷键  
+" let mapleader=","  
+" 例如 Ctrl-n 打开/关闭文件树 (如果你用插件)  
+" nnoremap <C-n> :NERDTreeToggle<CR>  
+
+" ====================
+" 可选 / 扩展功能 (按需启用)
+" ====================
+
+" 若不想生成 swap 文件 / 备份文件（适合服务器 / NAS 环境）  
+set noswapfile 
+set nobackup 
+set nowritebackup 
+
+" 命令补全 & 自动补全 / wildmenu  
+set wildmenu  
+set completeopt=longest,menu  
+
+" 设置滚动灵敏度 (让光标离上下边缘保持行数)  
+set scrolloff=3  
+set sidescrolloff=5  
+
+" 如果你喜欢黑色／深色终端，可以配合终端主题  
+set background=dark  
+
+" 插件管理 (如果你之后安装插件管理器)  
+" call plug#begin('~/.vim/plugged')
+" Plug 'preservim/nerdtree'
+" Plug 'junegunn/fzf'
+" call plug#end()
+
+" ====================
+" 其他个人习惯 (按需)
+" ====================
+" 例如：自动把剪贴板与系统 / X11 共享  
+" set clipboard+=unnamed  
+
+" 方便使用 backspace 删除 indent / eol / start  
+set backspace=indent,eol,start  
+
